@@ -10,22 +10,20 @@ and follow coordinated disclosure.
 pull requests, or discussions.** Public reports expose users before a fix is
 available.
 
-Report vulnerabilities through the **OWASP Vulnerability Disclosure Program (VDP)**
-on Bugcrowd:
+Report vulnerabilities by following the OWASP Foundation's security reporting
+process:
 
-- https://bugcrowd.com/engagements/owasp-vdp-pro
+- https://owasp.org/security
 
-Reporting requires a Bugcrowd account. Please read the engagement brief before
-testing, as it is the source of truth for scope and rules. The OWASP VDP is a
-disclosure program, not a paid bug bounty.
+That page describes the current process for all OWASP projects, including how
+to submit a report through the **OWASP Vulnerability Disclosure Program (VDP)**
+and the terms that apply. The VDP is a disclosure program, not a paid bug
+bounty.
 
 When you submit, please ask for **@mrutkows** (Matt Rutkowski), the project
-owner, to be copied or notified — either through the Bugcrowd submission itself
-or out-of-band via a private Slack direct message. Do not describe the issue in
+owner, to be copied or notified — either through the VDP submission itself or
+out-of-band via a private Slack direct message. Do not describe the issue in
 any public Slack channel.
-
-General guidance on reporting security issues in OWASP projects is published at
-https://owasp.org/security.
 
 ## What to include
 
@@ -41,8 +39,7 @@ include:
 ## What to expect
 
 1. **Triage.** OWASP Foundation staff review incoming reports and route valid
-   issues to the project maintainers. You can expect an initial response within
-   14 days of submission.
+   issues to the project maintainers.
 2. **Assessment.** Maintainers confirm the impact and determine affected
    versions.
 3. **Fix.** A patch is prepared and released, and we agree with you on when it
@@ -79,11 +76,11 @@ affected component.
   service.
 - Access, copy, or change data that is not yours.
 - Report missing security headers, version banners, or similar low-signal
-  findings unless the VDP brief explicitly asks for them.
+  findings unless the VDP terms explicitly ask for them.
 
 OWASP has committed that good-faith research following the VDP terms will not
-be treated as a hostile act. The Bugcrowd engagement brief governs scope and
-safe-harbour language for VDP submissions.
+be treated as a hostile act. The VDP terms, reached from
+https://owasp.org/security, govern scope and safe-harbour language.
 
 ## Questions
 

@@ -184,6 +184,18 @@ Two workflows run on every pull request targeting `main`:
   packages with the `errcheck` linter disabled. The `gui/` package is excluded
   because it requires X11/OpenGL, which headless runners do not provide.
 
+Three further checks run on every pull request across CycloneDX repositories:
+
+- **DCO** — fails if any commit lacks a `Signed-off-by:` line. To fix it, add
+  the sign-off and force-push: `git commit --amend --no-edit -s` for the latest
+  commit, or `git rebase --signoff main` for several, then
+  `git push --force-with-lease`.
+- **Codacy Static Code Analysis** — code quality and static analysis.
+- **GitGuardian Security Checks** — scans for committed secrets.
+
+Pull requests from first-time contributors may need a maintainer to approve
+the workflow runs before the Go and golangci-lint checks start.
+
 CI runs a narrower set of tests than `make test` does locally, so a green CI
 run is necessary but not sufficient — please run the suite before opening a
 pull request.
